@@ -1,0 +1,70 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 250% 250%;
+  background-image: linear-gradient(
+    -45deg,
+    yellow 0%,
+    yellow 25%,
+    yellow 51%,
+    #ff357f 100%
+  );
+  -webkit-animation: AnimateBG 20s ease infinite;
+  animation: AnimateBG 20s ease infinite;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#search {
+  padding: 12px 20px;
+  width: 250px;
+  font-size: 1rem;
+  border: 2px solid #ff357f;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+#search:focus {
+  border-color: yellow;
+  box-shadow: 0 0 10px yellow;
+}
+
+/* Button styling */
+#submit {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+#submit:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #00c6ff, #007bff);
+  box-shadow: 0 4px 15px rgba(255, 53, 127, 0.5);
+}
+
+#weatherInfo {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 1.5rem;
+  font-family: "Merriweather";
+}
