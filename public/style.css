@@ -1,6 +1,8 @@
 body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +28,7 @@ body {
 }
 #search {
   padding: 12px 20px;
-  width: 250px;
+  width: 350px;
   font-size: 1rem;
   border: 2px solid #ff357f;
   border-radius: 25px;
@@ -34,13 +36,11 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-/* Input focus effect */
 #search:focus {
   border-color: yellow;
   box-shadow: 0 0 10px yellow;
 }
 
-/* Button styling */
 #submit {
   padding: 12px 20px;
   font-size: 1rem;
@@ -53,7 +53,6 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-/* Button hover effect */
 #submit:hover {
   transform: scale(1.1);
   background: linear-gradient(45deg, #00c6ff, #007bff);
@@ -67,4 +66,11 @@ body {
   background: rgba(255, 255, 255, 0.2);
   font-size: 1.5rem;
   font-family: "Merriweather";
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
 }
